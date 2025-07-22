@@ -22,7 +22,7 @@
   // Update welcome text and set terminal prompt to '$ '
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
   // Install course requirements
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "!{sys.executable} -m pip install -r requirements.txt",
   // Pull all branches
   "postAttachCommand": "git pull --all"
 }
